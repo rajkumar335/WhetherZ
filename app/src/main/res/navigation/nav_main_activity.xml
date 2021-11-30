@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_activity"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.whetherz.MainScreen"
+        android:label="main_screen_fragment"
+        tools:layout="@layout/main_screen_fragment" >
+        <action
+            android:id="@+id/showDayWhetherData"
+            app:destination="@id/dayWhetherData"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right">
+            <argument
+                android:name="CurrentDayWhether"
+                app:argType="com.example.whetherz.WhetherData" />
+        </action>
+        <action
+            android:id="@+id/action_mainScreen_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayWhetherData"
+        android:name="com.example.whetherz.DayWhetherData"
+        android:label="fragment_day_whether_data"
+        tools:layout="@layout/fragment_day_whether_data" >
+        <argument
+            android:name="CurrentDayWhether"
+            app:argType="com.example.whetherz.WhetherData" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.whetherz.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

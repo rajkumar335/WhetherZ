@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">WhetherZ</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="todaysDate">Today, %1$s</string>
+    <string name="requiredDate">%1$s, %2$s</string>
+    <string name="temperature">%1$d</string>
+
+    <string name="wind_direction">Wind Direction</string>
+    <string name="air_pressure">Air Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="visibility">Visibility</string>
+    <string name="predictability">Predictability</string>
+
+    <string name="wind_direction_val">%1$f °</string>
+    <string name="humidity_val">%1$d</string>
+    <string name="wind_speed_val">%1$f m/h</string>
+    <string name="air_pressure_val">%1$f mbar</string>
+    <string name="visibility_val">%1$f miles</string>
+    <string name="predictability_val">%1$d</string>
+    <string name="max_temp">%1$d°C</string>
+    <string name="min_temp">%1$d°C</string>
+    <string name="wind_speed">Wind Speed</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+    <string name="location_header">Location</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="current_location_title">Current Location</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="no_location_selected">No location selected</string>
+    <string name="network_connection_error">Network connection error</string>
+    <string name="please_connect_to_a_network_and_retry">Please connect to a network and retry</string>
+    <string name="retry">RETRY</string>
+    <string name="location_error">Location Error</string>
+    <string name="Please_set_a_location">No location is set.\nPlease set a location in the settings</string>
+
+
+</resources>

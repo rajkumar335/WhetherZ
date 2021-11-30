@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/whetherState"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:src="@drawable/clear64"
+            android:id="@+id/whetherStateImg"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/whetherStateText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/ubuntulight"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/day"
+        app:layout_constraintEnd_toStartOf="@+id/MinTemp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/whetherState"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Heavy Cloud" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/bauhs93"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/whetherState"
+        app:layout_constraintEnd_toStartOf="@+id/MinTempState"
+        app:layout_constraintStart_toEndOf="@+id/whetherState"
+        app:layout_constraintTop_toBottomOf="@+id/whetherStateText"
+        tools:text="Thrusday" />
+
+    <TextView
+        android:id="@+id/MaxTemp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/MaxTempState"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/MaxTempState"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="22" />
+
+    <TextView
+        android:id="@+id/MaxTempState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntulight"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/whetherState"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="high" />
+
+    <TextView
+        android:id="@+id/MinTemp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/MinTempState"
+        app:layout_constraintEnd_toStartOf="@+id/MaxTempState"
+        app:layout_constraintStart_toStartOf="@+id/MinTempState"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="38" />
+
+    <TextView
+        android:id="@+id/MinTempState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntulight"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@+id/whetherState"
+        app:layout_constraintEnd_toStartOf="@+id/MaxTempState"
+        tools:text="low" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
