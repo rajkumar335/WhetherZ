@@ -66,8 +66,7 @@ public class RetrieveDataFromNetwork {
         requestQueue.add(jsonArrayRequest);
     }
 
-    /**
-     * The given method */
+    
     public void getWhetherInfo(String id){
         String requiredQueryURL = whetherDataRetrieveURL+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, requiredQueryURL, null, new Response.Listener<JSONObject>() {
